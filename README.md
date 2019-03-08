@@ -1,8 +1,23 @@
-# Multiple File Upload with Nest
+# File Upload with Nest
 
 ## Description
 
+A showcase how to upload files with **Nest Framework**.
 
+Nest comes with [multer](https://www.npmjs.com/package/multer) under the hood for file uploading. 
+There is a section about [File upload in the Nest documentation](https://docs.nestjs.com/techniques/file-upload). 
+
+## Configuration
+
+The configuration happens in `multerOptions`.
+
+In the project the following options are used:
+
+- File size limit
+- Check mimetype
+- Storage destination is `files/` folder
+- The original file name is overwritten with a `uuid`
+- More options are available. See [multer documentation](https://www.npmjs.com/package/multer#multeropts).
 
 ## Installation
 
@@ -48,4 +63,4 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 ## License
 
-  Nest is [MIT licensed](LICENSE).
+Nest is [MIT licensed](https://github.com/udacity/ud777-writing-readmes/blob/master/LICENSE).

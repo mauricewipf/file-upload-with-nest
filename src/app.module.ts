@@ -23,7 +23,7 @@ export const multerOptions = {
   },
 
   storage: diskStorage({
-    destination: './files',
+    destination: 'files/',
 
     // File modification details
     filename: (req: any, file: any, cb: any) => {

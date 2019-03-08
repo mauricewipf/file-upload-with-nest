@@ -16,7 +16,6 @@ export class AppController {
   @Post('/upload')
   @UseInterceptors(FilesInterceptor('files', 5))
   upload(@UploadedFiles() files) {
-    // Logger.log(files);
     return 'done';
   }
 
